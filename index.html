@@ -345,6 +345,7 @@
     .nav-btn:active { transform: translateY(1px); }
     .nav-btn:disabled { opacity: .55; cursor: not-allowed; }
     .nav-btn[hidden] { display: none; }
+    .controls .nav-btn { min-width: 0; flex: 1; }
 
     .image-preview[hidden] { display: none; }
 
@@ -621,8 +622,8 @@
       .task-card, .solution-card, .timer-card { padding-left: 16px; padding-right: 16px; }
       .timer-card { height: 118px; }
       .timer-display { font-size: 52px; }
-      .controls { padding-inline: 16px; }
-      .nav-btn { height: 52px; font-size: 16px; padding-inline: 15px; }
+      .controls { padding-inline: 16px; gap: 8px; }
+      .nav-btn { height: 52px; font-size: 14px; padding-inline: 8px; }
       .image-preview { padding: 68px 16px 24px; }
       .preview-stage { height: 82vh; }
       .preview-close { top: 14px; right: 14px; }
@@ -700,7 +701,8 @@
         <div class="controls">
           <button class="nav-btn primary start-btn" type="button" id="startBtn" disabled>Start</button>
           <button class="nav-btn" type="button" id="prevBtn" disabled hidden>Previous</button>
-          <button class="nav-btn primary" type="button" id="nextBtn" disabled hidden>Next image</button>
+          <button class="nav-btn primary reveal-btn" type="button" id="revealSolutionBtn" disabled>Reveal solution</button>
+          <button class="nav-btn" type="button" id="nextBtn" disabled hidden>Next image</button>
         </div>
       </section>
     </section>
@@ -760,6 +762,7 @@
     const taskCardEl = document.getElementById("taskCard");
     const startBtn = document.getElementById("startBtn");
     const prevBtn = document.getElementById("prevBtn");
+    const revealSolutionBtn = document.getElementById("revealSolutionBtn");
     const nextBtn = document.getElementById("nextBtn");
     const imagePreviewTrigger = document.getElementById("imagePreviewTrigger");
     const imagePreview = document.getElementById("imagePreview");
@@ -851,6 +854,7 @@
       if (!caseStarted) return;
       revealed = true;
       clearInterval(intervalId);
+      revealSolutionBtn.textContent = "View solution";
       solutionContent.scrollTop = 0;
       solutionCard.classList.remove("is-hidden", "drawer-dismissed");
       solutionCard.setAttribute("aria-hidden", "false");
@@ -985,6 +989,9 @@
       startBtn.hidden = false;
       prevBtn.disabled = currentCase === 0;
       prevBtn.hidden = true;
+      revealSolutionBtn.disabled = true;
+      revealSolutionBtn.hidden = false;
+      revealSolutionBtn.textContent = "Reveal solution";
       nextBtn.disabled = false;
       nextBtn.hidden = true;
       nextBtn.textContent = currentCase === cases.length - 1 ? "Restart" : "Next image";
@@ -995,9 +1002,11 @@
       caseStarted = true;
       startBtn.hidden = true;
       prevBtn.hidden = false;
+      revealSolutionBtn.disabled = false;
+      revealSolutionBtn.hidden = false;
       nextBtn.hidden = false;
       startTimer();
-      nextBtn.focus();
+      revealSolutionBtn.focus();
     }
 
     function validateDataset(payload) {
@@ -1029,6 +1038,7 @@
       showImageUnavailable("Case data unavailable");
       startBtn.disabled = true;
       prevBtn.disabled = true;
+      revealSolutionBtn.disabled = true;
       nextBtn.disabled = true;
       timerEl.textContent = "--:--";
     }
@@ -1052,6 +1062,7 @@
 
     imagePreviewTrigger.addEventListener("click", openImagePreview);
     startBtn.addEventListener("click", startCase);
+    revealSolutionBtn.addEventListener("click", revealSolution);
     previewCloseBtn.addEventListener("click", closeImagePreview);
     zoomOutBtn.addEventListener("click", () => setPreviewZoom(zoomLevel - .25));
     zoomResetBtn.addEventListener("click", resetPreviewZoom);
