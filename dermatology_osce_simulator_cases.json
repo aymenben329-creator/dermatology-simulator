@@ -1,0 +1,850 @@
+{
+  "dataset_id": "dermatology_osce_simulator_v1",
+  "schema_version": 2,
+  "title": "Dermatology Ecos Simulator",
+  "language": "fr",
+  "created_from": "fiches_dermatologie_osce_organisees.pdf",
+  "default_timer_seconds": 180,
+  "flow_controls": {
+    "reveal_solution_on": [
+      "timer_end",
+      "spacebar"
+    ],
+    "advance_control": "next_button",
+    "preserve_source_image_numbers": true
+  },
+  "missing_source_images": [
+    14,
+    15,
+    19,
+    22
+  ],
+  "images_count": 19,
+  "images": [
+    {
+      "id": "img_01",
+      "source_image_number": 1,
+      "sequence_index": 1,
+      "title": "Psoriasis en plaques",
+      "image": {
+        "url": "https://i.ibb.co/Y7SgxYfQ/1.png",
+        "alt": "Clinical dermatology image for case 1",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_02",
+        "previous_image_id": null,
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris une plaque érythémateuse infiltrée, bien limitée, ovalaire à arrondie, d’environ 5 à 6 cm, recouverte de squames épaisses blanchâtres argentées, siégeant sur la face d’extension d’un coude, sans suintement, vésicules ni ulcération visible ; je recherche d’autres localisations, une atteinte unguéale et des signes fonctionnels comme le prurit ou la douleur.",
+        "diagnosis_primary": "Psoriasis en plaques",
+        "differential_diagnoses": [
+          "eczéma nummulaire chronique",
+          "dermatophytie cutanée/tinea corporis"
+        ],
+        "differential_diagnoses_raw": "eczéma nummulaire chronique, dermatophytie cutanée/tinea corporis",
+        "management_brief": [
+          "Mesures générales : émollients, éviter grattage/traumatismes, rechercher autres plaques, atteinte unguéale et rhumatisme psoriasique.",
+          "Forme limitée : dermocorticoïde local adapté à l’épaisseur de la plaque, souvent associé/alterné à un analogue de la vitamine D ; kératolytique si squames épaisses.",
+          "Référence dermatologie si forme étendue, résistante, atteinte du visage/génitale importante, retentissement majeur ou suspicion d’arthrite : photothérapie, traitement systémique ou biothérapie."
+        ],
+        "mentor_tip": "Plaque bien limitée + face d’extension + squames épaisses argentées = pense psoriasis.",
+        "solution_summary": "Psoriasis en plaques — Plaque bien limitée + face d’extension + squames épaisses argentées = pense psoriasis.",
+        "management_one_liner": "Mesures générales : émollients, éviter grattage/traumatismes, rechercher autres plaques, atteinte unguéale et rhumatisme psoriasique."
+      },
+      "tags": [
+        "psoriasis"
+      ]
+    },
+    {
+      "id": "img_02",
+      "source_image_number": 2,
+      "sequence_index": 2,
+      "title": "Eczéma atopique / dermatite atopique flexurale",
+      "image": {
+        "url": "https://i.ibb.co/sJRjDL81/2.png",
+        "alt": "Clinical dermatology image for case 2",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_03",
+        "previous_image_id": "img_01",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris une plaque érythémateuse mal limitée, irrégulière, d’environ 8 cm, sèche et finement squameuse, légèrement épaissie/lichénifiée, avec quelques excoriations punctiformes, siégeant au niveau du pli du coude sur une zone de flexion ; je recherche un prurit, une xérose cutanée diffuse et d’autres lésions des plis.",
+        "diagnosis_primary": "Eczéma atopique / dermatite atopique flexurale",
+        "differential_diagnoses": [
+          "eczéma de contact",
+          "psoriasis inversé ou flexural"
+        ],
+        "differential_diagnoses_raw": "eczéma de contact, psoriasis inversé ou flexural",
+        "management_brief": [
+          "Base : émollients quotidiens, toilette douce, éviter irritants/allergènes et traiter la xérose.",
+          "Poussée inflammatoire : dermocorticoïde local de puissance adaptée, courte durée ; inhibiteur de la calcineurine possible dans plis/visage ou zones sensibles.",
+          "Chercher surinfection, facteur de contact, retentissement du prurit ; avis dermato si sévère, récidivant ou mal contrôlé."
+        ],
+        "mentor_tip": "Plaque rouge mal limitée + sèche + prurigineuse + pli de flexion = pense eczéma atopique.",
+        "solution_summary": "Eczéma atopique / dermatite atopique flexurale — Plaque rouge mal limitée + sèche + prurigineuse + pli de flexion = pense eczéma atopique.",
+        "management_one_liner": "Base : émollients quotidiens, toilette douce, éviter irritants/allergènes et traiter la xérose."
+      },
+      "tags": [
+        "eczéma"
+      ]
+    },
+    {
+      "id": "img_03",
+      "source_image_number": 3,
+      "sequence_index": 3,
+      "title": "Acné vulgaire papulo-pustuleuse modérée",
+      "image": {
+        "url": "https://i.ibb.co/9kCj2S37/3.png",
+        "alt": "Clinical dermatology image for case 3",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_04",
+        "previous_image_id": "img_02",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris une éruption cutanée polymorphe du visage, prédominant aux joues, au menton et autour du nez, faite de multiples lésions folliculaires millimétriques associant des comédons ouverts et fermés, des papules inflammatoires érythémateuses et plusieurs pustules, avec quelques macules pigmentées post-inflammatoires ; je recherche une atteinte du dos et du thorax ainsi que des nodules ou cicatrices.",
+        "diagnosis_primary": "Acné vulgaire inflammatoire papulo-pustuleuse, probablement modérée",
+        "differential_diagnoses": [
+          "folliculite",
+          "rosacée papulo-pustuleuse"
+        ],
+        "differential_diagnoses_raw": "folliculite, rosacée papulo-pustuleuse",
+        "management_brief": [
+          "Mesures : nettoyage doux, non-comédogène, éviter manipulation des lésions, informer que l’amélioration demande plusieurs semaines.",
+          "Acné légère à modérée : peroxyde de benzoyle + rétinoïde topique ; antibiotique topique seulement en association, pas en monothérapie.",
+          "Si forme inflammatoire modérée à sévère : antibiotique oral type cycline selon protocole + traitement topique ; isotrétrinoïne/avis dermato si nodules, cicatrices ou échec."
+        ],
+        "mentor_tip": "Comédons + papules/pustules folliculaires sur le visage = acné jusqu’à preuve du contraire.",
+        "solution_summary": "Acné vulgaire inflammatoire papulo-pustuleuse, probablement modérée — Comédons + papules/pustules folliculaires sur le visage = acné jusqu’à preuve du contraire.",
+        "management_one_liner": "Mesures : nettoyage doux, non-comédogène, éviter manipulation des lésions, informer que l’amélioration demande plusieurs semaines."
+      },
+      "tags": [
+        "acné"
+      ]
+    },
+    {
+      "id": "img_04",
+      "source_image_number": 4,
+      "sequence_index": 4,
+      "title": "Dermatophytie de la peau glabre / tinea corporis",
+      "image": {
+        "url": "https://i.ibb.co/B5mX9wZ3/4.png",
+        "alt": "Clinical dermatology image for case 4",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_05",
+        "previous_image_id": "img_03",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris une plaque érythémato-squameuse annulaire, bien limitée, d’environ 4 à 5 cm, avec un bord périphérique plus inflammatoire, légèrement surélevé et squameux, associée à un éclaircissement central, siégeant sur une peau glabre ; je recherche un prurit, d’autres lésions similaires et une porte d’entrée mycosique.",
+        "diagnosis_primary": "Dermatophytie de la peau glabre / tinea corporis",
+        "differential_diagnoses": [
+          "psoriasis annulaire",
+          "eczéma nummulaire"
+        ],
+        "differential_diagnoses_raw": "psoriasis annulaire, eczéma nummulaire",
+        "management_brief": [
+          "Confirmer si doute par examen mycologique ; rechercher pied d’athlète, animal/contact contaminant et autres foyers.",
+          "Traitement local : antifongique topique type terbinafine ou azolé, appliqué sur la lésion et au-delà du bord actif, poursuivi après disparition clinique.",
+          "Antifongique oral si lésions étendues, récidivantes, immunodépression, atteinte pileuse ou échec du local ; éviter dermocorticoïde seul."
+        ],
+        "mentor_tip": "Anneau rouge squameux avec bord actif + centre plus clair = pense mycose cutanée avant psoriasis.",
+        "solution_summary": "Dermatophytie de la peau glabre / tinea corporis — Anneau rouge squameux avec bord actif + centre plus clair = pense mycose cutanée avant psoriasis.",
+        "management_one_liner": "Confirmer si doute par examen mycologique ; rechercher pied d’athlète, animal/contact contaminant et autres foyers."
+      },
+      "tags": [
+        "dermatophytie",
+        "tinea"
+      ]
+    },
+    {
+      "id": "img_05",
+      "source_image_number": 5,
+      "sequence_index": 5,
+      "title": "Zona thoracique",
+      "image": {
+        "url": "https://i.ibb.co/Y70f5fgX/5.png",
+        "alt": "Clinical dermatology image for case 5",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_06",
+        "previous_image_id": "img_04",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris sur l’hémithorax latéral une éruption vésiculeuse unilatérale faite de multiples vésicules groupées en bouquets sur fond érythémateux, parfois confluentes, disposées en bande suivant un dermatome, sans franchissement de la ligne médiane ; je recherche une douleur à type de brûlure, des croûtes et un terrain d’immunodépression.",
+        "diagnosis_primary": "Zona (herpès zoster) thoracique",
+        "differential_diagnoses": [
+          "herpès simplex étendu",
+          "dermite de contact vésiculeuse"
+        ],
+        "differential_diagnoses_raw": "herpès simplex étendu, dermite de contact vésiculeuse",
+        "management_brief": [
+          "Mesures : antalgiques, soins locaux simples, couvrir les lésions, éviter contact avec femmes enceintes non immunisées, nouveau-nés et immunodéprimés.",
+          "Antiviral oral idéalement dans les 72 h, surtout si douleur importante, âge avancé, immunodépression ou localisation à risque.",
+          "Urgence/avis spécialisé si zona ophtalmique, atteinte neurologique, dissémination, immunodépression ; prévenir et traiter la douleur post-zostérienne."
+        ],
+        "mentor_tip": "Vésicules en bouquets + douleur + bande unilatérale métamérique = pense immédiatement au zona.",
+        "solution_summary": "Zona (herpès zoster) thoracique — Vésicules en bouquets + douleur + bande unilatérale métamérique = pense immédiatement au zona.",
+        "management_one_liner": "Mesures : antalgiques, soins locaux simples, couvrir les lésions, éviter contact avec femmes enceintes non immunisées, nouveau-nés et immunodéprimés."
+      },
+      "tags": [
+        "zona"
+      ]
+    },
+    {
+      "id": "img_06",
+      "source_image_number": 6,
+      "sequence_index": 6,
+      "title": "Vitiligo non segmentaire localisé",
+      "image": {
+        "url": "https://i.ibb.co/r29Hxcn0/6.png",
+        "alt": "Clinical dermatology image for case 6",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_07",
+        "previous_image_id": "img_05",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris une plaque achromique/dépigmentée, bien limitée, de contours irréguliers et festonnés, formée par la confluence de plusieurs macules blanchâtres, siégeant sur la face dorsale de la main et du poignet, mesurant environ 5 à 6 cm, sans érythème, squames, infiltration ni atrophie visible ; je recherche d’autres localisations, une leucotrichie, un phénomène de Koebner, des antécédents familiaux et des signes de maladie auto-immune associée.",
+        "diagnosis_primary": "Vitiligo non segmentaire localisé",
+        "differential_diagnoses": [
+          "hypopigmentation post-inflammatoire",
+          "pityriasis versicolor"
+        ],
+        "differential_diagnoses_raw": "hypopigmentation post-inflammatoire, pityriasis versicolor",
+        "management_brief": [
+          "Expliquer le caractère bénin mais chronique ; photoprotection, camouflage si besoin, rechercher retentissement psychologique.",
+          "Lésions limitées : dermocorticoïde local court sur tronc/membres ; inhibiteur de la calcineurine préféré au visage, cou et plis.",
+          "Dermatologie si extension, localisation gênante ou échec : photothérapie UVB à bande étroite/excimer ; chercher signes de maladie auto-immune selon contexte."
+        ],
+        "mentor_tip": "Tache blanc laiteux, nette, non squameuse, surtout mains/visage = pense vitiligo.",
+        "solution_summary": "Vitiligo non segmentaire localisé — Tache blanc laiteux, nette, non squameuse, surtout mains/visage = pense vitiligo.",
+        "management_one_liner": "Expliquer le caractère bénin mais chronique ; photoprotection, camouflage si besoin, rechercher retentissement psychologique."
+      },
+      "tags": [
+        "vitiligo"
+      ]
+    },
+    {
+      "id": "img_07",
+      "source_image_number": 7,
+      "sequence_index": 7,
+      "title": "Urticaire aiguë",
+      "image": {
+        "url": "https://i.ibb.co/tTQmvnQ6/7.png",
+        "alt": "Clinical dermatology image for case 7",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_08",
+        "previous_image_id": "img_06",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris de multiples papules et plaques urticariennes érythémateuses et œdémateuses, de tailles variables, arrondies ou ovalaires, bien limitées, surélevées, à surface lisse, parfois confluentes, siégeant au niveau de l’avant-bras, sans squames, croûtes ni ulcération visible ; je recherche un prurit intense, le caractère fugace et migrateur des lésions, ainsi que des signes de gravité comme un angio-œdème, une dyspnée ou une hypotension.",
+        "diagnosis_primary": "Urticaire aiguë",
+        "differential_diagnoses": [
+          "piqûres d’insectes multiples",
+          "dermite de contact allergique"
+        ],
+        "differential_diagnoses_raw": "piqûres d’insectes multiples, dermite de contact allergique",
+        "management_brief": [
+          "Identifier et supprimer un déclencheur possible : médicament, aliment, infection, piqûre, effort, froid/chaleur ; éviter AINS/alcool si aggravants.",
+          "Traitement symptomatique : antihistaminique H1 de 2e génération ; courte corticothérapie seulement si poussée sévère selon contexte.",
+          "Urgence si angio-œdème laryngé, dyspnée, malaise, hypotension ou anaphylaxie : adrénaline IM et prise en charge urgente."
+        ],
+        "mentor_tip": "Plaques rouges, lisses, œdémateuses, très prurigineuses et fugaces = urticaire.",
+        "solution_summary": "Urticaire aiguë — Plaques rouges, lisses, œdémateuses, très prurigineuses et fugaces = urticaire.",
+        "management_one_liner": "Identifier et supprimer un déclencheur possible : médicament, aliment, infection, piqûre, effort, froid/chaleur ; éviter AINS/alcool si aggravants."
+      },
+      "tags": [
+        "urticaire"
+      ]
+    },
+    {
+      "id": "img_08",
+      "source_image_number": 8,
+      "sequence_index": 8,
+      "title": "Eczéma chronique lichenifié",
+      "image": {
+        "url": "https://i.ibb.co/21YKP9By/8.png",
+        "alt": "Clinical dermatology image for case 8",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_09",
+        "previous_image_id": "img_07",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris une plaque érythémato-brunâtre eczématiforme, mal limitée, irrégulière, d’environ 8 à 10 cm de grand axe, siégeant au niveau de la région latéro-cervicale, à surface sèche finement squameuse, épaissie et lichénifiée avec accentuation des plis cutanés et quelques excoriations, sans vésicules, suintement ni ulcération visible ; je recherche un prurit chronique, une xérose cutanée, d’autres atteintes des plis et un terrain atopique ou un facteur de contact.",
+        "diagnosis_primary": "Eczéma chronique lichenifié, compatible avec dermatite atopique",
+        "differential_diagnoses": [
+          "dermatite de contact",
+          "lichen simplex chronique"
+        ],
+        "differential_diagnoses_raw": "dermatite de contact, lichen simplex chronique",
+        "management_brief": [
+          "Objectif : casser le cercle prurit-grattage ; émollients, ongles courts, éviter frottements/parfums/irritants et rechercher allergène de contact.",
+          "Dermocorticoïde local de puissance adaptée en cure courte ; occlusion possible sur plaque épaisse sous surveillance.",
+          "Antihistaminique sédatif le soir si prurit nocturne gênant ; traiter surinfection ; avis dermato si chronique résistant."
+        ],
+        "mentor_tip": "Plaque sèche mal limitée + prurit + plis accentués = eczéma chronique lichenifié.",
+        "solution_summary": "Eczéma chronique lichenifié, compatible avec dermatite atopique — Plaque sèche mal limitée + prurit + plis accentués = eczéma chronique lichenifié.",
+        "management_one_liner": "Objectif : casser le cercle prurit-grattage ; émollients, ongles courts, éviter frottements/parfums/irritants et rechercher allergène de contact."
+      },
+      "tags": [
+        "eczéma",
+        "lichen"
+      ]
+    },
+    {
+      "id": "img_09",
+      "source_image_number": 9,
+      "sequence_index": 9,
+      "title": "Lichen plan cutané",
+      "image": {
+        "url": "https://i.ibb.co/Q7zvHCMQ/9.png",
+        "alt": "Clinical dermatology image for case 9",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_10",
+        "previous_image_id": "img_08",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris de multiples papules violacées à brunâtres, bien limitées, millimétriques, planes ou légèrement surélevées, parfois excoriées ou croûteuses, disséminées sur la jambe et la région de la cheville, avec quelques macules hyperpigmentées post-inflammatoires, sans œdème ni ulcération visible ; je recherche un prurit intense, une atteinte des muqueuses buccales, des ongles et d’autres localisations comme les poignets.",
+        "diagnosis_primary": "Lichen plan cutané",
+        "differential_diagnoses": [
+          "prurigo chronique",
+          "vascularite purpurique/purpura palpable"
+        ],
+        "differential_diagnoses_raw": "prurigo chronique, vascularite purpurique/purpura palpable",
+        "management_brief": [
+          "Évaluer l’atteinte muqueuse buccale/génitale, unguéale et le retentissement du prurit ; rassurer car les formes cutanées peuvent régresser spontanément.",
+          "Lésions prurigineuses : dermocorticoïde puissant local sur lésions actives ; antihistaminique si prurit.",
+          "Avis dermatologie si forme étendue, muqueuse érosive, douloureuse, unguéale ou résistante : photothérapie ou traitement systémique possible."
+        ],
+        "mentor_tip": "Papules violacées, planes, prurigineuses, aux poignets ou chevilles = pense lichen plan.",
+        "solution_summary": "Lichen plan cutané — Papules violacées, planes, prurigineuses, aux poignets ou chevilles = pense lichen plan.",
+        "management_one_liner": "Évaluer l’atteinte muqueuse buccale/génitale, unguéale et le retentissement du prurit ; rassurer car les formes cutanées peuvent régresser spontanément."
+      },
+      "tags": [
+        "lichen"
+      ]
+    },
+    {
+      "id": "img_10",
+      "source_image_number": 10,
+      "sequence_index": 10,
+      "title": "Zona cutané",
+      "image": {
+        "url": "https://i.ibb.co/Psmd3W84/10.png",
+        "alt": "Clinical dermatology image for case 10",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_11",
+        "previous_image_id": "img_09",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris une éruption vésiculeuse unilatérale du flanc droit, faite de multiples petites vésicules groupées en bouquets sur fond érythémateux, associées à quelques croûtes correspondant à des vésicules rompues, disposées de façon segmentaire suivant un dermatome ; je recherche une douleur ou une sensation de brûlure, une allodynie, une fièvre et un terrain d’immunodépression.",
+        "diagnosis_primary": "Zona cutané",
+        "differential_diagnoses": [
+          "herpès simplex",
+          "dermite de contact vésiculeuse"
+        ],
+        "differential_diagnoses_raw": "herpès simplex, dermite de contact vésiculeuse",
+        "management_brief": [
+          "Mesures : antalgiques, soins locaux simples, protéger les lésions et surveiller la surinfection.",
+          "Antiviral oral idéalement dans les 72 h ou si forme sévère/terrain à risque ; adaptation au terrain et fonction rénale.",
+          "Urgence si atteinte ophtalmique, neurologique, disséminée ou immunodépression ; surveiller névralgie post-zostérienne."
+        ],
+        "mentor_tip": "Vésicules en bouquet + douleur + disposition unilatérale en bande = pense d’abord au zona.",
+        "solution_summary": "Zona cutané — Vésicules en bouquet + douleur + disposition unilatérale en bande = pense d’abord au zona.",
+        "management_one_liner": "Mesures : antalgiques, soins locaux simples, protéger les lésions et surveiller la surinfection."
+      },
+      "tags": [
+        "zona"
+      ]
+    },
+    {
+      "id": "img_11",
+      "source_image_number": 11,
+      "sequence_index": 11,
+      "title": "Psoriasis en plaques, forme peu épaisse",
+      "image": {
+        "url": "https://i.ibb.co/Vp3HsPSH/11.png",
+        "alt": "Clinical dermatology image for case 11",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_12",
+        "previous_image_id": "img_10",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris au niveau de la face d’extension du coude une grande plaque érythémato-squameuse, irrégulière, relativement bien limitée, formée de plaques confluentes avec quelques lésions satellites, à surface sèche recouverte de fines squames blanchâtres, avec quelques excoriations superficielles, sans vésicules, suintement ni ulcération visible ; je recherche un prurit, une atteinte unguéale, d’autres localisations psoriasiques et des signes articulaires.",
+        "diagnosis_primary": "Psoriasis en plaques, forme peu épaisse/moins typique",
+        "differential_diagnoses": [
+          "eczéma chronique",
+          "dermatophytie/tinea corporis"
+        ],
+        "differential_diagnoses_raw": "eczéma chronique, dermatophytie/tinea corporis",
+        "management_brief": [
+          "Même prise en charge que psoriasis en plaques : émollients, dermocorticoïde local adapté, analogue de vitamine D possible, kératolytique si besoin.",
+          "Ne pas confondre avec mycose : si bord annulaire actif ou doute, faire examen mycologique avant corticoïde prolongé.",
+          "Avis dermato si extension, échec, atteinte unguéale/articulaire ou retentissement important."
+        ],
+        "mentor_tip": "Même si les squames sont fines, une plaque squameuse sur la face d’extension du coude doit faire penser au psoriasis.",
+        "solution_summary": "Psoriasis en plaques, forme peu épaisse/moins typique — Même si les squames sont fines, une plaque squameuse sur la face d’extension du coude doit faire penser au psoriasis.",
+        "management_one_liner": "Même prise en charge que psoriasis en plaques : émollients, dermocorticoïde local adapté, analogue de vitamine D possible, kératolytique si besoin."
+      },
+      "tags": [
+        "psoriasis"
+      ]
+    },
+    {
+      "id": "img_12",
+      "source_image_number": 12,
+      "sequence_index": 12,
+      "title": "Lichen simplex chronique / eczéma lichenifié",
+      "image": {
+        "url": "https://i.ibb.co/ycnPF9XN/12.png",
+        "alt": "Clinical dermatology image for case 12",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_13",
+        "previous_image_id": "img_11",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris une plaque érythémato-brunâtre eczématiforme, mal limitée, irrégulière, siégeant au niveau de la région latéro-cervicale/postérieure du cou, à surface sèche finement squameuse, épaissie et lichénifiée avec accentuation des plis cutanés et quelques excoriations, sans vésicules, suintement ni ulcération visible ; je recherche un prurit chronique, une xérose, un terrain atopique et un facteur de contact local.",
+        "diagnosis_primary": "Eczéma chronique lichenifié / lichen simplex chronique",
+        "differential_diagnoses": [
+          "dermatite de contact",
+          "dermatite atopique chronique"
+        ],
+        "differential_diagnoses_raw": "dermatite de contact, dermatite atopique chronique",
+        "management_brief": [
+          "Traitement central : interrompre le grattage chronique ; émollients, éviter frottements, parfums, col serré et autres irritants.",
+          "Dermocorticoïde puissant/superpuissant court sur plaque épaisse, parfois sous occlusion ; puissance plus faible si peau fine/sensible.",
+          "Antihistaminique sédatif si prurit nocturne ; rechercher dermatite de contact ; dermato si récidive ou résistance."
+        ],
+        "mentor_tip": "Plaque brunâtre sèche + plis accentués + cou + prurit chronique = pense lichenification par grattage.",
+        "solution_summary": "Eczéma chronique lichenifié / lichen simplex chronique — Plaque brunâtre sèche + plis accentués + cou + prurit chronique = pense lichenification par grattage.",
+        "management_one_liner": "Traitement central : interrompre le grattage chronique ; émollients, éviter frottements, parfums, col serré et autres irritants."
+      },
+      "tags": [
+        "eczéma",
+        "lichen"
+      ]
+    },
+    {
+      "id": "img_13",
+      "source_image_number": 13,
+      "sequence_index": 13,
+      "title": "Psoriasis du cuir chevelu / rétro-auriculaire",
+      "image": {
+        "url": "https://i.ibb.co/qYXsyy1C/13.png",
+        "alt": "Clinical dermatology image for case 13",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_16",
+        "previous_image_id": "img_12",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris une plaque érythémato-squameuse bien limitée, irrégulière, infiltrée, recouverte de squames blanchâtres épaisses et adhérentes, siégeant au niveau de la région rétro-auriculaire et débordant sur la lisière du cuir chevelu, sans suintement ni vésicules visibles ; je recherche un prurit, d’autres localisations psoriasiques, une atteinte unguéale et des signes articulaires.",
+        "diagnosis_primary": "Psoriasis du cuir chevelu / rétro-auriculaire",
+        "differential_diagnoses": [
+          "dermite séborrhéique",
+          "eczéma chronique / dermatite de contact"
+        ],
+        "differential_diagnoses_raw": "dermite séborrhéique, eczéma chronique / dermatite de contact",
+        "management_brief": [
+          "Soins du cuir chevelu : shampooings kératolytiques/antipelliculaires, décoller les squames sans traumatiser.",
+          "Traitement local : dermocorticoïde en lotion/gel/mousse adapté au cuir chevelu, souvent associé à analogue de vitamine D ; traitement doux en zone rétro-auriculaire.",
+          "Rechercher autres localisations, ongles et arthralgies ; avis dermato si extension, échec ou retentissement important."
+        ],
+        "mentor_tip": "Plaque bien limitée avec squames épaisses qui déborde la lisière du cuir chevelu = pense psoriasis avant tout.",
+        "solution_summary": "Psoriasis du cuir chevelu / rétro-auriculaire — Plaque bien limitée avec squames épaisses qui déborde la lisière du cuir chevelu = pense psoriasis avant tout.",
+        "management_one_liner": "Soins du cuir chevelu : shampooings kératolytiques/antipelliculaires, décoller les squames sans traumatiser."
+      },
+      "tags": [
+        "psoriasis"
+      ]
+    },
+    {
+      "id": "img_16",
+      "source_image_number": 16,
+      "sequence_index": 14,
+      "title": "Pityriasis rosé de Gibert",
+      "image": {
+        "url": "",
+        "alt": "Clinical dermatology image for case 14",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_17",
+        "previous_image_id": "img_13",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris de multiples macules et plaques érythémato-squameuses rosées, ovalaires, de tailles variables, bien limitées, à fine desquamation superficielle parfois en collerette, disséminées sur le tronc, avec une lésion plus grande évoquant un médaillon initial ; je recherche un prurit, un épisode infectieux récent, une prise médicamenteuse et l’absence d’atteinte palmo-plantaire ou muqueuse.",
+        "diagnosis_primary": "Pityriasis rosé de Gibert",
+        "differential_diagnoses": [
+          "psoriasis en gouttes",
+          "dermatophytie cutanée multiple / tinea corporis",
+          "syphilis secondaire si atteinte palmo-plantaire, muqueuse ou contexte évocateur"
+        ],
+        "differential_diagnoses_raw": "psoriasis en gouttes, dermatophytie cutanée multiple / tinea corporis, syphilis secondaire si atteinte palmo-plantaire, muqueuse ou contexte évocateur",
+        "management_brief": [
+          "Affection généralement bénigne et spontanément résolutive, avec régression habituelle en quelques semaines ; rassurer le patient et expliquer l’évolution naturelle.",
+          "Traitement symptomatique : émollients, éviter les irritants cutanés, antihistaminique oral si prurit, et dermocorticoïde léger à modéré sur les lésions très prurigineuses ou inflammatoires.",
+          "Avis dermatologique ou bilan si forme atypique, persistante, très extensive, atteinte muqueuse ou palmo-plantaire, grossesse, ou doute avec une toxidermie ou une syphilis secondaire."
+        ],
+        "mentor_tip": "Plaques ovalaires rosées finement squameuses sur le tronc + médaillon initial = pense pityriasis rosé de Gibert.",
+        "solution_summary": "Pityriasis rosé de Gibert — Plaques ovalaires rosées finement squameuses sur le tronc + médaillon initial = pense pityriasis rosé de Gibert.",
+        "management_one_liner": "Affection généralement bénigne et spontanément résolutive ; rassurer le patient et proposer un traitement symptomatique."
+      },
+      "tags": [
+        "pityriasis rosé"
+      ]
+    },
+    {
+      "id": "img_17",
+      "source_image_number": 17,
+      "sequence_index": 15,
+      "title": "Folliculite bactérienne superficielle",
+      "image": {
+        "url": "https://i.ibb.co/vxTNMm2k/17.png",
+        "alt": "Clinical dermatology image for case 15",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_18",
+        "previous_image_id": "img_16",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris de multiples lésions folliculaires millimétriques, faites de papules et de pustules centrées par un poil, entourées d’un discret halo érythémateux, siégeant sur une zone pileuse de la jambe, avec quelques lésions croûteuses ou hyperpigmentées post-inflammatoires, sans ulcération ni œdème diffus visible ; je recherche une douleur, un prurit, une fièvre, une notion de rasage ou de frottement, ainsi qu’un terrain favorisant comme le diabète ou l’immunodépression.",
+        "diagnosis_primary": "Folliculite bactérienne superficielle",
+        "differential_diagnoses": [
+          "furonculose débutante",
+          "prurigo / piqûres d’insectes excoriées"
+        ],
+        "differential_diagnoses_raw": "furonculose débutante, prurigo / piqûres d’insectes excoriées",
+        "management_brief": [
+          "Mesures : hygiène, éviter rasage/frottements/occlusion, compresses tièdes, traiter facteurs favorisants.",
+          "Forme localisée : antiseptique cutané ; antibiotique topique courte durée si nécessaire.",
+          "Antibiotique oral anti-staphylococcique, prélèvement ou avis médical si lésions nombreuses, récidivantes, fièvre, douleur importante, furoncles/abcès ; drainage si abcès."
+        ],
+        "mentor_tip": "Pustule centrée par un poil = pense folliculite avant tout.",
+        "solution_summary": "Folliculite bactérienne superficielle — Pustule centrée par un poil = pense folliculite avant tout.",
+        "management_one_liner": "Mesures : hygiène, éviter rasage/frottements/occlusion, compresses tièdes, traiter facteurs favorisants."
+      },
+      "tags": [
+        "folliculite"
+      ]
+    },
+    {
+      "id": "img_18",
+      "source_image_number": 18,
+      "sequence_index": 16,
+      "title": "Staphylococcie maligne de la face",
+      "image": {
+        "url": "https://i.ibb.co/gb8Vxdh7/18.png",
+        "alt": "Clinical dermatology image for case 16",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_20",
+        "previous_image_id": "img_17",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris un placard inflammatoire érythémateux et œdémateux de l’hémiface gauche, prédominant dans la région centro-faciale péri-nasale et jugale, à limites floues, parsemé de multiples lésions pustuleuses et croûteuses jaunâtres, avec érosions superficielles, évoquant une infection bactérienne staphylococcique sévère ; je recherche une douleur intense, une fièvre, une altération de l’état général, une notion de manipulation d’un furoncle, ainsi que des signes de gravité oculaire ou neurologique.",
+        "diagnosis_primary": "staphylococcie maligne de la face",
+        "differential_diagnoses": [
+          "impétigo/impétiginisation",
+          "zona facial"
+        ],
+        "differential_diagnoses_raw": "impétigo/impétiginisation, zona facial",
+        "management_brief": [
+          "Urgence médico-hospitalière : ne pas manipuler, évaluer fièvre, état général, douleur, œil et signes neurologiques.",
+          "Hospitalisation, prélèvements si possible, antibiothérapie IV anti-staphylococcique adaptée au contexte local/MRSA, soins locaux et traitement de la porte d’entrée.",
+          "Rechercher thrombose veineuse faciale/sinus caverneux par imagerie si signes d’alerte ; anticoagulation seulement si thrombose confirmée et avis spécialisé."
+        ],
+        "mentor_tip": "Pustules/croûtes sur gros placard rouge douloureux centro-facial = urgence staphylococcique, pas simple impétigo.",
+        "solution_summary": "staphylococcie maligne de la face — Pustules/croûtes sur gros placard rouge douloureux centro-facial = urgence staphylococcique, pas simple impétigo.",
+        "management_one_liner": "Urgence médico-hospitalière : ne pas manipuler, évaluer fièvre, état général, douleur, œil et signes neurologiques."
+      },
+      "tags": [
+        "staphylococcie"
+      ]
+    },
+    {
+      "id": "img_20",
+      "source_image_number": 20,
+      "sequence_index": 17,
+      "title": "Érysipèle du membre inférieur",
+      "image": {
+        "url": "https://i.ibb.co/MDrgTcsj/20.png",
+        "alt": "Clinical dermatology image for case 17",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_21",
+        "previous_image_id": "img_18",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris un vaste placard érythémateux rouge vif, luisant, tendu et œdémateux, relativement bien limité, à contours irréguliers, siégeant au niveau de la jambe distale et de la cheville, sans ulcération, nécrose ni phlyctène visible ; je recherche une chaleur locale, une douleur, une fièvre avec frissons, une porte d’entrée cutanée, une lymphangite et des adénopathies régionales.",
+        "diagnosis_primary": "Érysipèle du membre inférieur, autrement dit une forme superficielle de dermo-hypodermite bactérienne aiguë",
+        "differential_diagnoses": [
+          "cellulite infectieuse plus profonde",
+          "dermite de stase / eczéma de stase"
+        ],
+        "differential_diagnoses_raw": "Cellulite infectieuse plus profonde ; dermite de stase / eczéma de stase, surtout si contexte veineux chronique. L’érysipèle est généralement plus nettement limité que la cellulite, qui tend à être plus profonde et moins bien délimitée",
+        "management_brief": [
+          "Évaluer gravité : fièvre/frissons, douleur, extension rapide, terrain fragile ; tracer les limites, repos, surélévation, antalgiques.",
+          "Antibiothérapie anti-streptococcique par voie orale si forme simple ; IV/hospitalisation si signes généraux importants, comorbidités, échec ou forme compliquée.",
+          "Chercher et traiter porte d’entrée : intertrigo inter-orteils, plaie, ulcère, œdème/insuffisance veineuse ; prévention des récidives."
+        ],
+        "mentor_tip": "Placard rouge vif, luisant, chaud, douloureux, œdémateux sur la jambe = érysipèle jusqu’à preuve du contraire.",
+        "solution_summary": "Érysipèle du membre inférieur, autrement dit une forme superficielle de dermo-hypodermite bactérienne aiguë — Placard rouge vif, luisant, chaud, douloureux, œdémateux sur la jambe = érysipèle jusqu’à preuve du contraire.",
+        "management_one_liner": "Évaluer gravité : fièvre/frissons, douleur, extension rapide, terrain fragile ; tracer les limites, repos, surélévation, antalgiques."
+      },
+      "tags": [
+        "érysipèle"
+      ]
+    },
+    {
+      "id": "img_21",
+      "source_image_number": 21,
+      "sequence_index": 18,
+      "title": "Cellulite infectieuse / DHBA non nécrosante",
+      "image": {
+        "url": "https://i.ibb.co/23h888sX/21.png",
+        "alt": "Clinical dermatology image for case 18",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": "img_23",
+        "previous_image_id": "img_20",
+        "is_last": false
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris un vaste placard inflammatoire érythémateux rouge vif, luisant, tendu et œdémateux, à limites floues et irrégulières, siégeant au niveau de la jambe distale et de la cheville, sans phlyctène, nécrose ni ulcération visible ; je recherche une chaleur locale, une douleur, une fièvre, des frissons, une lymphangite, des adénopathies régionales et surtout une porte d’entrée cutanée.",
+        "diagnosis_primary": "Cellulite infectieuse / dermo-hypodermite bactérienne aiguë non nécrosante du membre inférieur",
+        "differential_diagnoses": [
+          "érysipèle",
+          "thrombose veineuse profonde",
+          "dermite de stase",
+          "dermatite de contact",
+          "thrombophlébite",
+          "vascularite"
+        ],
+        "differential_diagnoses_raw": "érysipèle, thrombose veineuse profonde, dermite de stase. Les principaux imitateurs de cellulite incluent notamment la dermatite de stase/contact, la thrombose veineuse profonde, la thrombophlébite et la vascularite",
+        "management_brief": [
+          "Confirmer l’infection et éliminer imitateurs : TVP, dermite de stase/contact, vascularite ; évaluer gravité et extension.",
+          "Repos, surélévation, antalgiques + antibiothérapie couvrant streptocoques, avec couverture staphylococcique/MRSA selon purulence, abcès ou facteurs de risque.",
+          "Hospitalisation/IV si sepsis, immunodépression, progression rapide, nécrose, douleur disproportionnée ou échec oral ; drainage si abcès."
+        ],
+        "mentor_tip": "Placard rouge diffus, luisant, œdémateux, à limites floues sur la jambe = cellulite/DHBA ; bord net surélevé = plutôt érysipèle.",
+        "solution_summary": "Cellulite infectieuse / dermo-hypodermite bactérienne aiguë non nécrosante du membre inférieur — Placard rouge diffus, luisant, œdémateux, à limites floues sur la jambe = cellulite/DHBA ; bord net surélevé = plutôt érysipèle.",
+        "management_one_liner": "Confirmer l’infection et éliminer imitateurs : TVP, dermite de stase/contact, vascularite ; évaluer gravité et extension."
+      },
+      "tags": [
+        "cellulite"
+      ]
+    },
+    {
+      "id": "img_23",
+      "source_image_number": 23,
+      "sequence_index": 19,
+      "title": "Pityriasis versicolor hypochromiant",
+      "image": {
+        "url": "https://i.ibb.co/dsFV1cK4/23.png",
+        "alt": "Clinical dermatology image for case 19",
+        "credit": null
+      },
+      "simulator": {
+        "mode": "dermatology_osce_description",
+        "timer_seconds": 180,
+        "reveal_solution_on": [
+          "timer_end",
+          "spacebar"
+        ],
+        "next_image_id": null,
+        "previous_image_id": "img_21",
+        "is_last": true
+      },
+      "learner_task": "Décrire la lésion cutanée à l’inspection, proposer le diagnostic le plus probable, citer les diagnostics différentiels utiles et la prise en charge initiale.",
+      "correction": {
+        "osce_description": "À l’inspection, je décris de multiples macules hypopigmentées, arrondies à ovalaires, de tailles variables, parfois confluentes en plaques irrégulières, siégeant au niveau du haut du dos, des épaules et de la nuque, à limites relativement nettes, avec une fine desquamation furfuracée discrète, sans érythème marqué, infiltration ni atrophie visible ; je recherche un prurit discret, des récidives, une hypersudation et d’autres localisations séborrhéiques.",
+        "diagnosis_primary": "Pityriasis versicolor hypochromiant",
+        "differential_diagnoses": [
+          "vitiligo",
+          "hypopigmentation post-inflammatoire / pityriasis alba"
+        ],
+        "differential_diagnoses_raw": "vitiligo, hypopigmentation post-inflammatoire / pityriasis alba",
+        "management_brief": [
+          "Rassurer : mycose superficielle non grave ; la repigmentation peut prendre plusieurs semaines à mois après guérison mycologique.",
+          "Traitement local : shampooing/gel antifongique type kétoconazole ou sulfure de sélénium, ou crème azolée/terbinafine selon étendue.",
+          "Si forme étendue, récidivante ou échec local : antifongique oral type itraconazole/fluconazole selon protocole ; prévention des récidives par traitement intermittent."
+        ],
+        "mentor_tip": "Taches hypopigmentées multiples du dos + fine desquamation = pityriasis versicolor, pas vitiligo.",
+        "solution_summary": "Pityriasis versicolor hypochromiant — Taches hypopigmentées multiples du dos + fine desquamation = pityriasis versicolor, pas vitiligo.",
+        "management_one_liner": "Rassurer : mycose superficielle non grave ; la repigmentation peut prendre plusieurs semaines à mois après guérison mycologique."
+      },
+      "tags": [
+        "pityriasis"
+      ]
+    }
+  ]
+}
